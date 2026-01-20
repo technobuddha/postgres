@@ -1,0 +1,50 @@
+{
+  "name": "@technobuddha/postgres",
+  "packageManager": "yarn@4.12.0",
+  "dependencies": {
+    "@dotenvx/dotenvx": "1.51.4",
+    "@technobuddha/project": "0.1.0-224",
+    "pg": "8.17.1",
+    "pg-cursor": "2.16.1",
+    "pg-promise": "12.3.0",
+    "pg-query-stream": "4.10.3"
+  },
+  "technobuddhaProject": {
+    "created": "2026-01-20T12:22:48.829Z"
+  },
+  "version": "0.0.1",
+  "description": "Technobuddha PostgreSQL library",
+  "author": {
+    "name": "Phil Hill",
+    "email": "phil@technobuddha.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/technobuddha/postgres"
+  },
+  "bugs": {
+    "url": "https://github.com/technobuddha/postgres/issues"
+  },
+  "homepage": "https://github.com/technobuddha/postgres#readme",
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "build default",
+    "build": "build prod",
+    "publish": "build publish",
+    "test": "npx vitest --typecheck run",
+    "test:watch": "npx vitest --typecheck --no-coverage watch",
+    "test:full": "npx vitest --typecheck --mode=full run",
+    "lint": "npx eslint src",
+    "spell": "npx cspell lint src"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/pg": "^8",
+    "@types/pg-cursor": "^2"
+  }
+}
