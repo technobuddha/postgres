@@ -3,7 +3,6 @@
   "packageManager": "yarn@4.12.0",
   "dependencies": {
     "@dotenvx/dotenvx": "1.51.4",
-    "@technobuddha/project": "0.1.0-224",
     "pg": "8.17.1",
     "pg-cursor": "2.16.1",
     "pg-promise": "12.3.0",
@@ -12,7 +11,7 @@
   "technobuddhaProject": {
     "created": "2026-01-20T12:22:48.829Z"
   },
-  "version": "0.0.1",
+  "version": "0.0.1-2",
   "description": "Technobuddha PostgreSQL library",
   "author": {
     "name": "Phil Hill",
@@ -39,12 +38,15 @@
     "test:watch": "npx vitest --typecheck --no-coverage watch",
     "test:full": "npx vitest --typecheck --mode=full run",
     "lint": "npx eslint src",
-    "spell": "npx cspell lint src"
+    "spell": "npx cspell lint src",
+    "preinstall": "git config core.hooksPath git-hooks"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {
+    "@technobuddha/project": "0.1.0-237",
     "@types/pg": "^8",
     "@types/pg-cursor": "^2"
-  }
+  },
+  "stableVersion": "0.0.1"
 }

@@ -1,4 +1,4 @@
-import './env.ts';
+import '@technobuddha/project/env';
 
 import pgPromise from 'pg-promise';
 
