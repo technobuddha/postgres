@@ -4,7 +4,6 @@
     "dist/**/*": true,
     "node_modules/**/*": true
   },
-  "todo-tree.filtering.excludeGlobs": ["node_modules/**/*", "dist/**/*"],
   "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,

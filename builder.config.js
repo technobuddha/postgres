@@ -3,7 +3,6 @@
 /** @type import('\@technobuddha/project/build').Builds */
 const config = {
   default: {
-    watch: true,
     steps: [
       {
         name: 'Clean',
@@ -11,7 +10,6 @@ const config = {
       },
       {
         name: 'Compile',
-        directory: './src',
         command: 'npx tsc --build src',
       }
     ],

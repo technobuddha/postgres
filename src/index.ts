@@ -1,1 +1,1 @@
-export { db, pgp } from './driver.ts';
+export * from './lib/index.ts';
