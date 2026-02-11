@@ -16,12 +16,26 @@ const config = [
     environment: 'node',
     tsConfig: 'tsconfig.json',
   }),
+  // migrations
+  app.lint({
+    files: ['migrations/**/*.ts'],
+    ignores: [],
+    environment: 'node',
+    tsConfig: 'migrations/tsconfig.json',
+  }),
   // src
   app.lint({
     files: ['src/**/*.ts'],
     ignores: [],
     environment: 'node',
     tsConfig: 'src/tsconfig.json',
+  }),
+  // templates
+  app.lint({
+    files: ['templates/**/*.ts'],
+    ignores: [],
+    environment: 'node',
+    tsConfig: 'templates/tsconfig.json',
   }),
 ];
 
