@@ -9,13 +9,6 @@ const config = [
   { ignores: ['coverage', 'dist'] },
   // .
   app.lint({ files: ['*.config.js'], ignores: [], environment: 'node' }),
-  // .
-  app.lint({
-    files: ['*.config.ts', '*.setup.ts'],
-    ignores: [],
-    environment: 'node',
-    tsConfig: 'tsconfig.json',
-  }),
   // migrations
   app.lint({
     files: ['migrations/**/*.ts'],

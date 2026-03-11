@@ -5,16 +5,16 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { toError } from '@technobuddha/library';
-import { err, locateRootDirectory, out, spawnPromise } from '@technobuddha/library/node';
+import { err, locatePackageRoot, out, spawnPromise } from '@technobuddha/library/node';
 import chalk from 'chalk';
 import { Argument, program } from 'commander';
 
 async function main(): Promise<void> {
   const here = path.join(import.meta.dirname, '..', '..');
-  const root = await locateRootDirectory();
+  const root = await locatePackageRoot();
 
   if (!root) {
-    err(chalk.red('Unable to locate the project root directory\n'));
+    err(chalk.red('Unable to locate the package root directory\n'));
     process.exit(1);
   }
 
@@ -63,7 +63,7 @@ async function main(): Promise<void> {
         'redo',
       ]),
     )
-    .addArgument(new Argument('[steps]', 'Number of steps to migrate').default('1'))
+    .addArgument(new Argument('[steps]', 'Number of steps to migrate').default(''))
     .action(async (direction: string, steps: string) => migrate(direction, steps));
 
   program.parse();
