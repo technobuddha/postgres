@@ -11,6 +11,6 @@
     "types": ["node"],
     "lib": ["esnext"]
   },
-  "include": ["**/*.ts"],
-  "exclude": []
+  "include": ["*.ts"],
+  "exclude": ["eslint.config.js"]
 }

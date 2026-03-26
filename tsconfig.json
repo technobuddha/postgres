@@ -12,6 +12,6 @@
     "checkJs": true,
     "noEmit": true
   },
-  "include": ["*.config.js"],
-  "exclude": []
+  "include": ["*.env", "*.config.js"],
+  "exclude": ["eslint.config.js"]
 }
