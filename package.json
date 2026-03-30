@@ -4,7 +4,7 @@
   "technobuddhaProject": {
     "created": "2026-01-20T12:22:48.829Z"
   },
-  "version": "0.0.1-24",
+  "version": "0.0.1-25",
   "description": "Technobuddha PostgreSQL library",
   "author": {
     "name": "Phil Hill",
@@ -21,11 +21,11 @@
   "homepage": "https://github.com/technobuddha/postgres#readme",
   "type": "module",
   "engines": {
-    "node": ">=24.0.0"
+    "node": ">=25.0.0"
   },
   "scripts": {
-    "start": "build default",
-    "build": "build prod",
+    "start": "build dev",
+    "build": "build default",
     "publish": "build publish",
     "test": "npx vitest --typecheck run",
     "test:watch": "npx vitest --typecheck --no-coverage watch",
@@ -48,7 +48,7 @@
     "pg-query-stream": "4.14.0"
   },
   "devDependencies": {
-    "@technobuddha/project": "0.1.0-446",
+    "@technobuddha/project": "0.1.0-461",
     "@types/pg": "^8.20.0",
     "@types/pg-cursor": "^2.7.2"
   },
