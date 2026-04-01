@@ -4,7 +4,7 @@
   "technobuddhaProject": {
     "created": "2026-01-20T12:22:48.829Z"
   },
-  "version": "0.0.1-25",
+  "version": "0.0.1-26",
   "description": "Technobuddha PostgreSQL library",
   "author": {
     "name": "Phil Hill",
@@ -48,7 +48,7 @@
     "pg-query-stream": "4.14.0"
   },
   "devDependencies": {
-    "@technobuddha/project": "0.1.0-461",
+    "@technobuddha/project": "0.1.0-477",
     "@types/pg": "^8.20.0",
     "@types/pg-cursor": "^2.7.2"
   },
