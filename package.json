@@ -4,7 +4,7 @@
   "technobuddhaProject": {
     "created": "2026-01-20T12:22:48.829Z"
   },
-  "version": "0.0.1-26",
+  "version": "0.0.1-27",
   "description": "Technobuddha PostgreSQL library",
   "author": {
     "name": "Phil Hill",
