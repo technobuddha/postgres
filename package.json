@@ -1,16 +1,16 @@
 {
   "name": "@technobuddha/postgres",
-  "packageManager": "yarn@4.12.0",
-  "technobuddhaProject": {
-    "created": "2026-01-20T12:22:48.829Z"
-  },
-  "version": "0.0.1-27",
   "description": "Technobuddha PostgreSQL library",
+  "version": "0.0.1-27",
+  "stableVersion": "0.0.1-18",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": {
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
   },
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/technobuddha/postgres"
@@ -19,10 +19,6 @@
     "url": "https://github.com/technobuddha/postgres/issues"
   },
   "homepage": "https://github.com/technobuddha/postgres#readme",
-  "type": "module",
-  "engines": {
-    "node": ">=25.0.0"
-  },
   "scripts": {
     "start": "build dev",
     "build": "build default",
@@ -35,12 +31,10 @@
     "preinstall": "git config core.hooksPath git-hooks",
     "migrate": "npx db migrate"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "bin": {
-    "db": "dist/db/db.js"
-  },
   "dependencies": {
+    "@technobuddha/library": "2.1.0-102",
+    "chalk": "5.6.2",
+    "commander": "14.0.3",
     "node-pg-migrate": "8.0.4",
     "pg": "8.20.0",
     "pg-cursor": "2.19.0",
@@ -48,9 +42,18 @@
     "pg-query-stream": "4.14.0"
   },
   "devDependencies": {
-    "@technobuddha/project": "0.1.0-477",
+    "@technobuddha/project": "0.1.0-507",
     "@types/pg": "^8.20.0",
     "@types/pg-cursor": "^2.7.2"
   },
-  "stableVersion": "0.0.1-18"
+  "bin": {
+    "db": "dist/db/db.js"
+  },
+  "engines": {
+    "node": ">=25.0.0"
+  },
+  "technobuddhaProject": {
+    "created": "2026-01-20T12:22:48.829Z"
+  },
+  "packageManager": "yarn@4.12.0"
 }
