@@ -1,12 +1,16 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "@technobuddha/postgres",
   "description": "Technobuddha PostgreSQL library",
-  "version": "0.0.1-27",
+  "version": "0.0.1-28",
   "stableVersion": "0.0.1-18",
   "license": "MIT",
   "type": "module",
-  "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "bin": {
+    "db": "dist/db/db.js"
+  },
   "author": {
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
@@ -15,10 +19,10 @@
     "type": "git",
     "url": "https://github.com/technobuddha/postgres"
   },
+  "homepage": "https://github.com/technobuddha/postgres#readme",
   "bugs": {
     "url": "https://github.com/technobuddha/postgres/issues"
   },
-  "homepage": "https://github.com/technobuddha/postgres#readme",
   "scripts": {
     "start": "build dev",
     "build": "build default",
@@ -42,12 +46,9 @@
     "pg-query-stream": "4.14.0"
   },
   "devDependencies": {
-    "@technobuddha/project": "0.1.0-507",
+    "@technobuddha/project": "0.1.0-512",
     "@types/pg": "^8.20.0",
     "@types/pg-cursor": "^2.7.2"
-  },
-  "bin": {
-    "db": "dist/db/db.js"
   },
   "engines": {
     "node": ">=25.0.0"
