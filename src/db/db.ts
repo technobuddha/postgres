@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import '@technobuddha/project/env';
+import '#env';
 
 import fs from 'node:fs/promises';
 import path from 'node:path';

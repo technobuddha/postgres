@@ -15,6 +15,9 @@
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
   },
+  "imports": {
+    "#env": "./src/config/env.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/technobuddha/postgres"
@@ -46,7 +49,7 @@
     "pg-query-stream": "4.14.0"
   },
   "devDependencies": {
-    "@technobuddha/project": "0.1.0-512",
+    "@technobuddha/project": "0.1.0-517",
     "@types/pg": "^8.20.0",
     "@types/pg-cursor": "^2.7.2"
   },
