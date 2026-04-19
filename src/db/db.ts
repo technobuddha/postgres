@@ -1,11 +1,11 @@
 #!/usr/bin/env node
+/// <dependency package="node-pg-migrate" />
 import '#env';
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { toError } from '@technobuddha/library';
-import { err, locatePackageRoot, out, spawnPromise } from '@technobuddha/library/node';
+import { err, locatePackageRoot, out, spawnPromise, toError } from '@technobuddha/library';
 import chalk from 'chalk';
 import { Argument, program } from 'commander';
 
