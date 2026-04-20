@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@technobuddha/postgres",
   "description": "Technobuddha PostgreSQL library",
-  "version": "0.0.1-30",
+  "version": "0.0.1-31",
   "stableVersion": "0.0.1-18",
   "license": "MIT",
   "type": "module",
@@ -50,7 +50,7 @@
     "pg-query-stream": "4.14.0"
   },
   "devDependencies": {
-    "@technobuddha/project": "1.0.0-5",
+    "@technobuddha/project": "1.0.0-8",
     "@types/node": "25.6.0",
     "@types/pg": "^8.20.0",
     "@types/pg-cursor": "^2.7.2",
