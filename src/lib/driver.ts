@@ -1,4 +1,4 @@
-import '#env';
+import '../config/env.ts';
 
 import pgPromise from 'pg-promise';
 
