@@ -2,12 +2,12 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@technobuddha/postgres",
   "description": "Technobuddha PostgreSQL library",
-  "version": "0.0.1-33",
+  "version": "0.0.1-34",
   "stableVersion": "0.0.1-18",
   "license": "MIT",
   "type": "module",
-  "types": "dist/index.d.ts",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
     "db": "dist/db/db.js"
   },
@@ -32,12 +32,12 @@
     "test:full": "npx vitest --typecheck --mode=full run",
     "lint": "npx eslint src",
     "spell": "npx cspell lint src",
-    "preinstall": "git config core.hooksPath git-hooks",
-    "migrate": "npx db migrate"
+    "migrate": "npx db migrate",
+    "prepare": "npx husky"
   },
   "dependencies": {
-    "@dotenvx/dotenvx": "1.61.1",
-    "@technobuddha/library": "2.1.0-111",
+    "@dotenvx/dotenvx": "1.63.0",
+    "@technobuddha/library": "2.1.0-115",
     "chalk": "5.6.2",
     "commander": "14.0.3",
     "node-pg-migrate": "8.0.4",
@@ -47,11 +47,12 @@
     "pg-query-stream": "4.14.0"
   },
   "devDependencies": {
-    "@technobuddha/project": "1.0.0-9",
+    "@technobuddha/project": "1.0.0-31",
     "@types/node": "25.6.0",
     "@types/pg": "^8.20.0",
     "@types/pg-cursor": "^2.7.2",
     "cspell": "10.0.0",
+    "husky": "9.1.7",
     "tsx": "4.21.0",
     "typescript": "6.0.3"
   },
